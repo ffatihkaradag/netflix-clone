@@ -1,5 +1,5 @@
 import React, { useEffect, useState, forwardRef } from 'react'
-import axios from './axios'
+import axios from '../axios'
 import './Row.css'
 
 import FlipMove from 'react-flip-move'

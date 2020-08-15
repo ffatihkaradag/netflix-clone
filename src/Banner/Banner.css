@@ -12,18 +12,27 @@
 }
 
 .banner__title {
-  font-size: 3rem;
   font-weight: 800;
   padding-bottom: 0.3rem;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  color: #fff;
+  text-align: center;
+  line-height: 1.1;
+  max-width: 640px;
+  margin: 0 auto;
+  font-size: 3.125rem;
 }
 
 .banner__description {
-  width: 45rem;
-  line-height: 1.3;
-  padding-top: 1rem;
-  font-size: 0.8rem;
-  max-width: 360px;
+  -webkit-font-smoothing: antialiased;
+  color: #fff;
+  font-weight: 400;
+  max-width: 640px;
+  font-size: 1.3rem;
   height: 80px;
+  padding-top: 1rem;
+  line-height: 1.3;
 }
 
 .banner--fadeBottom {
@@ -45,8 +54,9 @@
   border-radius: 0.2vw;
   padding-left: 2rem;
   padding-right: 2rem;
-  margin-right: 1rem;
   padding-top: 0.5rem;
+  margin-right: 1rem;
+  margin-top: 0.5rem;
   background-color: rgba(51, 51, 51, 0.5);
   padding-bottom: 0.5rem;
 }
