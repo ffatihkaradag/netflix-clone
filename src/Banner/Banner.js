@@ -5,6 +5,8 @@ import './Banner.css'
 function Banner() {
   const [movie, setMovie] = useState([])
 
+  const base_url = 'https://image.tmdb.org/t/p/original/'
+
   useEffect(() => {
     async function fetchData() {
       const request = await axios.get(requests.fetchNetflixOriginals)
@@ -29,7 +31,7 @@ function Banner() {
       style={{
         backgroundSize: 'cover',
         backgroundPosition: 'center center',
-        backgroundImage: `url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path}")`
+        backgroundImage: `url("${base_url}${movie?.backdrop_path}")`
       }}
     >
       <div className="banner__contents">

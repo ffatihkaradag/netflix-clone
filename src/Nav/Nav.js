@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import './Nav.css'
 
 function Nav() {
@@ -10,25 +11,21 @@ function Nav() {
         handleShow(true)
       } else handleShow(false)
     })
-    return () => {
-      window.removeEventListener('scroll')
-    }
   }, [])
 
   return (
     <div className={`nav ${show && 'nav__black'}`}>
       <div className="nav__contents">
-        <img
-          className="nav__logo"
-          src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Logo_Netflix.png"
-          alt="Netflix Logo"
-        />
-
-        <img
-          className="nav__avatar"
-          src="https://pbs.twimg.com/profile_images/1240119990411550720/hBEe3tdn_400x400.png"
-          alt="Netflix Logo"
-        />
+        <Link to="/">
+          <img
+            className="nav__logo"
+            src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Logo_Netflix.png"
+            alt="Netflix Logo"
+          />
+        </Link>
+        <Link to="/login" className="nav__signin">
+          Sign In
+        </Link>
       </div>
     </div>
   )

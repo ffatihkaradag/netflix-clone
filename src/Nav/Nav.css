@@ -22,14 +22,20 @@
   position: fixed;
   left: 0;
   width: 80px;
+  padding-top: 2px;
   object-fit: contain;
   padding-left: 20px;
 }
 
-.nav__avatar {
+.nav__signin {
   position: fixed;
   right: 20px;
   object-fit: contain;
-  width: 30px;
-  height: 30px;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-direction: normal;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 3px;
+  background-color: #e50914;
+  padding: 7px 17px;
 }
